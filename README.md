@@ -29,6 +29,7 @@ This command will set up a noVNC server that you can access via your web browser
 Once the container is running, you can view the interface using:
 - Browser: `http://localhost:6080` to access noVNC.
 - VNC Client: Connect to `localhost:5901`.
+- password for the VNC and user is `root`.
 
 ## Configuration 📄
 Update the `values.json` file with your personal details:
