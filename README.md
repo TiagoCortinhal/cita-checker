@@ -31,6 +31,9 @@ Once the container is running, you can view the interface using:
 - VNC Client: Connect to `localhost:5901`.
 - password for the VNC and user is `root`.
 
+## Step 4: Start the Script
+After accessing the noVNC interface, start the `cita-previa.py` script located in the home folder. This will initiate the appointment-checking process.
+
 ## Configuration 📄
 Update the `values.json` file with your personal details:
 ```json
