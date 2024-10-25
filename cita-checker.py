@@ -125,7 +125,7 @@ def check_for_appointments():
             else:
                 sb.set_window_size(1280, 1024)
                 sb.save_screenshot("/tmp/cita_disponible.png")
-                send_email("Cita Disponible Alert", "VNC to vnc://127.0.0.1:5901 to complete", attach_screenshot=True)
+                send_email("Cita Disponible Alert", "localhost:6080 to complete", attach_screenshot=True)
                 logging.info("Appointments might be available. Keeping the browser open for manual check.")
                 time.sleep(600)
                 return "manual_check_needed"
