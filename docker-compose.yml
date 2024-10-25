@@ -1,0 +1,12 @@
+services:
+  cita-checker:
+    image: bakayarou23/cita-checker:latest
+    ports:
+      - "5901:5900"
+      - "6080:80"
+    environment:
+      - RESOLUTION=1366x768
+      - VNC_PASSWORD=root
+    volumes:
+      - ./cita-check.py:/home/nonroot/cita-check.py
+      - ./values.json:/home/nonroot/values.json

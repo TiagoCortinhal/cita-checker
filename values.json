@@ -1,0 +1,15 @@
+{
+  "url": "https://your-service-url.com",
+  "idCitadoValue": "YOUR_ID_VALUE",
+  "desCitadoValue": "YOUR_FULL_NAME",
+  "TypeID": "YOUR_ID_TYPE",
+  "paisNacValue": "YOUR_COUNTRY",
+  "tramiteOptionText": "YOUR_SERVICE_OPTION_TEXT",
+  "receiver_email": "your_receiver@example.com",
+  "sender_email": "your_sender@example.com",
+  "password": "your_password",
+  "smtp_server": "your_smtp_server.com",
+  "smtp_port": 587,
+  "keyboard_layout": "your_keyboard_layout",
+  "region": "your_region"
+}
