@@ -33,6 +33,7 @@ Once the container is running, you can view the interface using:
 
 ## Step 4: Start the Script
 After accessing the noVNC interface, start the `cita-previa.py` script located in the home folder. This will initiate the appointment-checking process.
+From personal experience Brave browser is the only one that did not trigger any problems from the platform.
 
 ## Configuration 📄
 Update the `values.json` file with your personal details:
