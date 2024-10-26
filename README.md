@@ -57,7 +57,7 @@ Update the `values.json` file with your personal details:
 ```
 
 ## Trámite Options 📝
-Here are all the possible trámite options you can choose from (they come with a bit of spice 🫑):
+Here are all the possible trámite options you can choose from:
 
 - 🌍 **ASILO - PRIMERA CITA**: The start of your asylum journey in Madrid.
 - 🏛️ **ASILO - OFICINA DE ASILO Y REFUGIO**: Pradillo 40 is where the magic happens for asylum and document renewals.
@@ -87,6 +87,11 @@ Simply add your sender email, password, and SMTP configuration to `values.json`.
 
 ## Contributing 💡
 Contributions are welcome! This project was inspired by [https://github.com/tbalza/cita-checker](https://github.com/tbalza/cita-checker), but some bugs were present that have been improved in this version. Please create a pull request if you'd like to enhance the codebase or add new features.
+
+##
+If you think this saved you time, you can buy be a coffee if you'd like!
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/nikhedonias)
 
 ## License 📜
 This project is licensed under the MIT License.
