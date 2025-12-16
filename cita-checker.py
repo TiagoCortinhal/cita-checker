@@ -1,5 +1,7 @@
 import time
 import random
+from time import sleep
+
 from seleniumbase import SB
 from selenium.webdriver.common.by import By
 import json
@@ -94,31 +96,38 @@ def cleanup_browser_processes():
 # Function to check for appointments
 def check_for_appointments():
     with SB(
-            chromium_arg="--force-device-scale-factor=1",
             browser="chrome",
             binary_location='/usr/bin/brave-browser',
             headed=True,
-            uc=True,
             use_auto_ext=True,
             slow=True,
+            demo=True,
             incognito=True,
     ) as sb:
         try:
             set_random_window_size(sb)
+            sleep(2)
             sb.open(config['url'])
+            sleep(2)
             sb.click("#form")
+            sleep(2)
             sb.select_option_by_text("#form", config['region'])
+            sleep(2)
             sb.click("#btnAceptar")
             sb.select_option_by_text("#tramiteGrupo\\[0\\]", config['tramiteOptionText'])
             sb.click("#btnAceptar")
+            sleep(2)
             sb.click("#btnEntrar")
             sb.find_element(By.ID, "rdbTipoDocPas").click()
             sb.type("#txtIdCitado", config['idCitadoValue'])
+            sleep(2)
             sb.type("#txtDesCitado", config['desCitadoValue'])
+            sleep(2)
             sb.click("#btnEnviar")
+            sleep(2)
             sb.click("#btnEnviar")
-
-            if sb.is_text_visible("En este momento no hay citas disponibles.", "div.mf-main--content.ac-custom-content p"):
+            sleep(2)
+            if sb.is_text_visible("En este momento no hay citas disponibles"):
                 logging.info("No available appointments. Trying again in 4 minutes.")
                 find_and_kill()
                 return "retry"
@@ -140,7 +149,7 @@ def main():
     while True:
         result = check_for_appointments()
         if result in ("retry", "error"):
-            time.sleep(240)
+            time.sleep(600)
         elif result == "manual_check_needed":
             input("Press Enter to exit after your manual check...")
             break

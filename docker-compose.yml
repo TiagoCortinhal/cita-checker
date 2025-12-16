@@ -1,6 +1,7 @@
 services:
   cita-checker:
     image: bakayarou23/cita-checker:latest
+    platform: linux/amd64
     ports:
       - "5901:5900"
       - "6080:80"
