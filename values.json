@@ -2,6 +2,7 @@
   "url": "https://icp.administracionelectronica.gob.es/icpplus/index.html",
   "idCitadoValue": "YOUR_ID_VALUE",
   "desCitadoValue": "YOUR_FULL_NAME",
+  "AnnoCitadoValue": "YOUR_BIRTH_YEAR"
   "TypeID": "YOUR_ID_TYPE",
   "paisNacValue": "YOUR_COUNTRY",
   "tramiteOptionText": "YOUR_SERVICE_OPTION_TEXT",
