@@ -3,11 +3,6 @@
 Cita Checker is a Python tool that automates the process of checking appointment availability on the [cita previa platform](https://icp.administracionelectronica.gob.es/icpplus/index.html) for various services in Spain, such as police services, asylum applications, or TIE card renewals.
 
 
-### Buy Me A Coffee
-If you think this saved you time, you can buy be a coffee if you'd like!
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/nikhedonias)
-
 ## Features 🌟
 - Uses SeleniumBase to interact with the web interface.
 - Randomizes window size to avoid fingerprinting.
